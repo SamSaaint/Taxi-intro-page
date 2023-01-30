@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./static/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./static/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+    <script src="https://kit.fontawesome.com/21ff906f65.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Taxi Košice | taxi na letisko Košice | ctctaxi.sk</title>
+</head>
+<body>
+    <nav class="nav-customized navbar navbar-expand-md fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-toggler border-0" aria-expanded="false" href="#">
+                <img class="logo-navbar" src="./static/logos/ctc-logo.png" alt="ctc_logo">
+            </a>
+            <button class="navbar-toggler border-0"" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <p class="collapse-button-text">MENU</p>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex align-items-center justify-content-around container-fluid  px-0">
+            <div class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">ÚVOD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">O NÁS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GALÉRIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">TIPY NA VÝLET</a>
+              </li>
+            </div>
+            <a href="" class="navbar-brand d-none d-md-block">
+              <img src="./static/logos/ctc-logo.png" width="200px" alt="">
+            </a>
+            <div class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">CENNÍK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">PREPRAVNÝ PORIADOK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">KONTAKT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">ANGLICKÝ JAZYK</a></li>
+                  <li><a class="dropdown-item" href="#">SLOVENSKÝ JAZYK</a></li>
+                </ul>
+              </li>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="img-slider">
+        <div id="img-slider-content">
+        <h1>Potrebujete odviezť?</h1>
+        <p>Odvezieme Vás, kam budete potrebovať.</p>
+        <button class="red-button-full" id="call-taxi-button">ZAVOLAJ TAXI</button>
+        <button class="red-button">REZERVUJ ONLINE</button>
+        <img id="superb-out" src="./static/images/ctc-superb-trans-tiny-135.png" alt="car-main" width="600px">
+        </div>
+      </div>
+
+      <div id="about">
+        <div id="about-left">
+            <h2 class="red-small-header">O nás</h2>
+            <h3 class="blue-medium-header">Prečo si vybrať naše služby</h3>
+            <p>CTC TAXI vznikla ako prvá súkromná taxislužba po novembri 1989. V súčasnosti má za sebou takmer štrnásťročnú úspešnú činnosť v oblasti poskytovania taxislužieb a za uvedené obdobie sa jej vďaka snahe o maximálnu spokojnosť svojich klientov podarilo vstúpiť do povedomia ľudí z Košíc a okolia. Svoj pozitívny image si vybudovala vďaka kvalite poskytovaných služieb, spoľahlivým prístupom vodičov k zákazníkom, bezpečnosťou a pohodlím motorových vozidiel.</p>
+            <button class="red-button">VIAC</button>
+        </div>
+        <div id="about-right">
+            <img src="./static/images/ctc-web-10-copy-59.jpg" alt="">
+        </div>
+      </div>
+
+      <div id="offer">
+        <div id="offer-text">
+            <h2 class="red-small-header">Naše autá</h2>
+            <h3 class="blue-medium-header">Vyberte si z našej <br> ponuky aút</h3>
+        </div>
+        <div id="offer-pics">
+          <div class="offer-pic">
+              <img src="./static/images/ctc-web-15-copy-48.jpg" alt="">
+              <div class="grey_hover"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+              <span>5 miest</span>
+              <p>Škoda Superb</p>
+          </div>
+          <div class="offer-pic">
+            <img src="./static/images/ctc-web-13-copy-49.jpg" alt="">
+            <div class="grey_hover"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <span>5 miest</span>
+            <p>Škoda Octavia</p>
+          </div>
+          <div class="offer-pic">
+            <img src="./static/images/ctc-web-8-copy-45.jpg" alt="">
+            <div class="grey_hover"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <span>5 miest</span>
+            <p>Mercedes GLA</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="price-list">
+        <div id="price-list-unskew">
+          <h2>Cenník</h2>
+          <h3>Naše služby ponúkame <br> v týchto cenách</h3>
+          <div id="price-list-options">
+            <div class="price-list-option">
+              <h4>Min. jazdné v meste</h4>
+              <p>3,5 €</p>
+              <a href="">+</a>
+            </div>
+            <div class="price-list-option">
+              <h4>Štartovné</h4>
+              <p>1,2 €</p>
+              <a href="">+</a>
+            </div>
+            <div class="price-list-option">
+              <h4>Letisko</h4>
+              <p>od 10 €</p>
+              <a href="">+</a>
+            </div>
+            <div class="price-list-option">
+              <h4>Kompletný cenník</h4>
+              <p>...</p>
+              <a href="">+</a>
+            </div>
+          </div>
+      </div>
+      </div>
+
+      <div id="partners">
+        <div id="partners-header">
+          <h2 class="red-small-header">Naši partneri</h2>
+          <h3 class="blue-medium-header">Naše služby <br> pravidelne využívajú</h3>
+        </div>
+        <div id="partners-logos">
+          <div><img src="./static/images/hilton-kosice-5.jpg" alt=""></div>
+          <div><img src="./static/images/letisko-kosice-9.png" alt=""></div>
+        </div>
+      </div>
+
+      <div id="station-position">
+        <div id="station-position-header">
+          <h2 class="red-small-header">Naše stanovištia</h2>
+          <h3 class="blue-medium-header">Nájdete nás <br> na týchto miestach</h3>
+        </div>
+        <div id="station-position-content">
+          <div class="spc-half">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Ko%C5%A1ice&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://www.embedgooglemap.net">how to copy google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+          </div>
+          <div class="spc-half">
+            <div class="spc-right">
+              <h3><i class="fa fa-bed"></i> DoubleTree by Hilton <br> Hotel Kosice</h3>
+              <p><b>Adresa:</b> Hlavná 1, 040 01 Košice</p>
+            </div>
+            <div class="spc-right">
+              <h3><i class="fa fa-plane"></i> Letisko Košice</h3>
+              <p><b>Adresa:</b> 041 75 Košice</p>
+            </div>
+            <div class="spc-right">
+              <h3><i class="fa fa-map-marker"></i> Atrium Optima Košice</h3>
+              <p><b>Adresa:</b> Moldavská cesta 32, 040 11 Košice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="star-reference">
+        <div id="star-reference-header">
+          <h2 class="red-small-header">Pomôžte nám zvýšiť kvalitu služieb</h2>
+          <h3 class="blue-medium-header">Napíšte prosím hodnotenie</h3>
+        </div>
+        <div id="star-reference-form">
+          <form action="?" method="post">
+            <div class="row g-3">
+              <div class="col">
+                <label for="ecv" class="form-label">EČV <b>/evidenčne číslo vozidla/</b> <span>*</span></label>
+                <input type="text" class="form-control" placeholder="ŠPZ" aria-label="ecv" id="ecv">
+              </div>
+              <div class="col">
+                <label for="date_time" class="form-label" >Dátum a čas jazdy <span>*</span></label>
+                <input type="text" class="form-control" aria-label="date_time">
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col">
+                <label for="" class="form-label">Hodnotenie vodiča <span>*</span></label>
+              </div>
+              <div class="col">
+                <label for="" class="form-label" >Hodnotenie čistoty auta <span>*</span></label>
+              </div>
+            </div>
+            <div class="mt-4">
+              <label for="rating_text" class="form-label">Text hodnotenia</label>
+              <textarea name="rating_text" class="form-control" id="rating_text" cols="25" rows="4"></textarea>
+            </div>
+            <div class="mt-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="text" class="form-control" placeholder="nepovinné">
+            </div>
+            <div id="form_bottom">
+              <div class="g-recaptcha" data-sitekey="your_site_key" id="recaptcha"></div>
+              <div>
+                <button class="red-button-full">ODOSLAŤ HODNOTENIE</button>
+              </div>
+              <div id="form_bottom_text"><p>Vyplňte všetky povinné polia označené hviezdičkou (*) <br> 
+                Hodnotenie služieb prebieha anonymne, vodiči o ňom nie sú informovaný.</p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="big-buttons">
+        <div>
+          <h3>Potrebujete taxi do mesta?</h3>
+          <p>+421 (0) 55 6 333 333</p>
+        </div>
+        <div>
+          <h3>Potrebujete taxi na letisko?</h3>
+          <p>+421 (0) 905 955 955</p>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="footer-logos">
+          <img src="./static/logos/ctc-logo-footer.png" alt="">
+          <button class="red-button">KONTAKTUJTE NÁS</button>
+        </div>
+        <div id="footer-text">
+          <p>© 2017 CTC TAXI. Všetky práva vyhradené.</p>
+          <p>Created by <span><a href="">WebForRent.sk</a></span></p>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
